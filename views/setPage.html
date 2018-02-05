@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="icon" href="">
+  <title>setPage</title>
+</head>
+<body class="lh-root lh-vars">
+  <form id="form" method="get" action="http://localhost:8080/getUrl">
+    url: <input type="text" id="url" name="url" value="">
+    <input type="submit" value="提交" />
+  </form>
+  <script src="https://cdn.bootcss.com/fetch/2.0.3/fetch.js" type="text/javascript"></script>
+  <!-- <script src="../static/js/fetch.js" type="text/javascript"></script> -->
+  <script>
+  let url = '/getUrl';
+  form.onclick = function (ev){
+    if(!url.value)return;
+    fetch(url,{data: {url: url.value}})
+      .then(function(res) {
+        if (res.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + res.status);
+            return;
+        }
+        res.json().then(function(data) {
+            console.log(data);
+        });
+    })
+    .catch(function(err) {
+        console.log('Fetch Error : %S', err);
+    })
+    ev.preventDefault();
+  };
+  </script>
+</body>
+</html>

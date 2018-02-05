@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="/css/index.css">
+  <link rel="icon" href="">
+  <title>report</title>
+</head>
+<body class="lh-root lh-vars">
+  <main>
+    <div class="lh-container">
+      <div class="lh-header">
+        <div class="lh-metadata">
+          <div class="lh-metadata__results">结果:
+            <a href="<%= data.url %>" class="lh-metadata__url" target="_blank" rel="noopener"><%= data.url %></a>
+          </div>
+          <div class="lh-config">
+            <span class="lh-config__timestamp"><%= data.generatedTime %></span>
+            <details class="lh-config__settings-toggle">
+              <summary>
+                <span>运行时设置</span>
+                <span class="lh-toggle-arrow" title="See report's runtime settings"></span>
+              </summary>
+              <div class="lh-env">
+                <div class="lh-env__title">运行环境</div>
+                <ul class="lh-env__items">
+                  <li class="lh-env__item">
+                    <span class="lh-env__name">ua:</span>
+                    <b class="lh-env__item__ua"><%= data.userAgent %></b>
+                  </li>
+                  <% data.runtimeConfig.environment.forEach((item)=>{ %>
+                    <li class="lh-env__item">
+                      <span class="lh-env__name"><%= item.name %></span>
+                      <span class="lh-env__description"><%= item.description %></span>
+                      <b class="lh-env__item__ua"><%= item.enabled ? '启用' : '已禁用' %></b>
+                    </li>
+                  <% }) %>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+      <!--nav-->
+      <nav class="lh-leftnav">
+        <div class="leftnav__header">
+          <h1 class="leftnav__header__title">灯塔</h1>
+          <div class="leftnav__header__version">版本：<%= data.lighthouseVersion %></div>
+        </div>
+        <% data.reportCategories.filter(item => item.name == 'Performance' || item.name == 'Best Practices').forEach((item)=>{ %>
+          <a href="#<%= item.id %>" class="lh-leftnav__item">
+            <span class="leftnav-item__category"><%= item.name %></span>
+            <span class="leftnav-item__score lh-score__value--average"><%= parseInt(item.score) %></span>
+          </a>
+        <% }) %>
+      </nav>
+      <!--report box-->
+      <div class="lh-report">
+        <div class="lh-scores-header">
+          <% data.reportCategories.forEach((item)=>{ %>
+            <a href="#<%= item.id %>" class="lh-gauge__wrapper">
+              <div class="lh-gauge lh-gauge--average" data-progress="<%= parseInt(item.score) %>">
+                <div class="lh-gauge__circle">
+                  <div class="lh-gauge__mask lh-gauge__mask--full" style="transform: rotate(<%= parseInt(item.score*1.8) %>deg);">
+                    <div class="lh-gauge__fill" style="transform: rotate(<%= parseInt(item.score*1.8) %>deg);"></div>
+                  </div>
+                  <div class="lh-gauge__mask lh-gauge__mask--half">
+                    <div class="lh-gauge__fill" style="transform: rotate(113deg);"></div>
+                    <div class="lh-gauge__fill lh-gauge__fill--fix" style="transform: rotate(<%= parseInt(item.score*1.8*2) %>deg);"></div>
+                  </div>
+                </div>
+                <div class="lh-gauge__percentage">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;"><%= parseInt(item.score) %></font>
+                  </font>
+                </div>
+              </div>
+              <div class="lh-gauge__label">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;"><%= item.name %></font>
+                </font>
+              </div>
+            </a>
+          <% }) %>
+        </div>
+        <div class="lh-categories">
+          <% data.reportCategories.forEach((item)=>{ %>
+            <% if(item.name == 'Performance'){ %>
+              <div class="lh-category">
+                <span class="lh-permalink" name="<%= item.name %>" id="<%= item.name %>"></span>
+                <div class="lh-score">
+                  <div class="lh-score__value lh-score__value--average lh-score__value--numeric"><%= parseInt(item.score) %></div>
+                  <div class="lh-score__gauge">
+                    <a href="#performance" class="lh-gauge__wrapper">
+                      <div class="lh-gauge lh-gauge--average" data-progress="<%= parseInt(item.score) %>">
+                        <div class="lh-gauge__circle">
+                          <div class="lh-gauge__mask lh-gauge__mask--full" style="transform: rotate(<%= parseInt(item.score*1.8) %>deg);">
+                            <div class="lh-gauge__fill" style="transform: rotate(<%= parseInt(item.score*1.8) %>deg);"></div>
+                          </div>
+                          <div class="lh-gauge__mask lh-gauge__mask--half">
+                            <div class="lh-gauge__fill" style="transform: rotate(<%= parseInt(item.score*1.8) %>deg);"></div>
+                            <div class="lh-gauge__fill lh-gauge__fill--fix" style="transform: rotate(<%= parseInt(item.score*1.8*2) %>deg);"></div>
+                          </div>
+                        </div>
+                        <div class="lh-gauge__percentage">
+                          <font style="vertical-align: inherit;"><%= parseInt(item.score) %></font>
+                        </div>
+                      </div>
+                      <div class="lh-gauge__label"><%= item.name %></div>
+                    </a>
+                  </div>
+                  <div class="lh-score__header">
+                    <div class="lh-score__snippet">
+                      <span class="lh-score__title"><%= item.name %></span>
+                    </div>
+                    <div class="lh-score__description">
+                      <span><%= item.description %></span>
+                    </div>
+                  </div>
+                </div>
+                <% ['perf-metric', 'perf-hint', 'perf-info'].forEach((key, index)=>{ %>
+                <div class="lh-audit-group">
+                  <summary class="lh-audit-group__summary">
+                    <div class="lh-audit-group__header"><%= data.reportGroups[key].title %></div>
+                    <div class="lh-toggle-arrow lh-toggle-arrow-unexpandable"></div>
+                  </summary>
+                  <div class="lh-audit-group__description">
+                    <span><%= data.reportGroups[key].description %></span>
+                  </div>
+                  <% if(key == 'perf-metric'){ %>
+                    <div class="lh-timeline-container">
+                      <div class="lh-timeline">
+                        <div class="lh-filmstrip">
+                          <% item.audits.filter((item)=> item.id == 'screenshot-thumbnails')[0].result.details.items.forEach((fileItem)=>{ %>
+                            <div class="lh-filmstrip__frame">
+                              <div class="lh-filmstrip__timestamp"><%= parseInt(fileItem.timing) %> s</div>
+                              <img class="lh-filmstrip__thumbnail" src="data:image/jpeg;base64,<%= fileItem.data %>" alt="Screenshot at <%= parseInt(fileItem.timing) %> s">
+                            </div>
+                          <% }) %>
+                        </div>
+                        <% item.audits.filter((item)=> (item.id == 'first-meaningful-paint' || item.id == 'first-interactive' || item.id == 'consistently-interactive')).forEach((fistItem)=>{ %>
+                          <div class="lh-timeline-metric lh-timeline-metric--<%= (fistItem.result.score > 60 ? 'pass' : 'average' ) %>">
+                            <div class="lh-timeline-metric__sparkline">
+                              <div class="lh-sparkline__bar" style="width: <%= (fistItem.result.rawValue/100 > 100 ? 100 : fistItem.result.rawValue/100 ) %>%;"></div>
+                            </div>
+                            <div class="lh-timeline-metric__header">
+                              <div class="lh-timeline-metric__value"><%= fistItem.result.displayValue %></div>
+                              <details class="lh-timeline-metric__details lh-expandable-details">
+                                <summary class="lh-timeline-metric__summary lh-expandable-details__summary">
+                                  <span class="lh-timeline-metric__title"><%= fistItem.result.name %></span>
+                                  <div class="lh-toggle-arrow"></div>
+                                </summary>
+                                <div class="lh-timeline-metric__description">
+                                  <span>
+                                    <%= fistItem.result.helpText.substring(0, fistItem.result.helpText.indexOf('[Learn more]')) %>
+                                    <a rel="noopener" target="_blank" href="<%= fistItem.result.helpText.substring(fistItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                                  </span>
+                                </div>
+                              </details>
+                            </div>
+                          </div>
+                        <% }) %>
+                        <% item.audits.filter((item)=> (item.id == 'speed-index-metric' || item.id == 'estimated-input-latency')).forEach((fistItem)=>{ %>
+                          <div class="lh-audit">
+                            <div class="lh-score">
+                              <div class="lh-score__value lh-score__value--<%= fistItem.score > 60 ? 'pass' : 'fail' %> lh-score__value--numeric"><%= fistItem.score %></div>
+                              <details class="lh-score__header lh-expandable-details" open="">
+                                <summary class="lh-score__snippet lh-expandable-details__summary">
+                                  <span class="lh-score__title"><%= fistItem.result.name %></span>
+                                  <div class="lh-toggle-arrow"></div>
+                                </summary>
+                                <div class="lh-score__description">
+                                  <span>
+                                    <%= fistItem.result.helpText.substring(0, fistItem.result.helpText.indexOf('[Learn more]')) %>
+                                    <a rel="noopener" target="_blank" href="<%= fistItem.result.helpText.substring(fistItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                                  </span>
+                                 </div>
+                              </details>
+                            </div>
+                          </div>
+                        <% }) %>
+                      </div>
+                    </div>
+                  <% }else if(key == 'perf-hint'){ %>
+                    <% item.audits.filter((item)=> (item.group == 'perf-hint')).forEach((hintItem)=>{ %>
+                      <details class="lh-perf-hint lh-perf-hint--<%= (hintItem.result.score > 60 ? 'pass' : 'fail' ) %> lh-expandable-details">
+                        <summary class="lh-perf-hint__summary lh-expandable-details__summary">
+                          <div class="lh-perf-hint__title"><%= hintItem.result.description %></div>
+                          <div class="lh-toggle-arrow"></div>
+                          <div class="lh-perf-hint__sparkline" title="<%= hintItem.result.displayValue %>">
+                            <div class="lh-sparkline">
+                              <div class="lh-sparkline__bar" style="width: <%= (hintItem.result.rawValue/100 > 100 ? 100 : hintItem.result.rawValue/100 ) %>%;"></div>
+                            </div>
+                          </div>
+                          <div class="lh-perf-hint__stats" title="<%= hintItem.result.displayValue %>">
+                            <div class="lh-perf-hint__primary-stat"><%= hintItem.result.rawValue ? hintItem.result.rawValue.toFixed(2) : null %>ms</div>
+                            <div class="lh-perf-hint__secondary-stat"><%= hintItem.result.extendedInfo.value.wastedKb ? hintItem.result.extendedInfo.value.wastedKb + 'KB' : '' %></div>
+                          </div>
+                        </summary>
+                        <div class="lh-perf-hint__description">
+                          <span>
+                            <%= hintItem.result.helpText.substring(0, hintItem.result.helpText.indexOf('[Learn more]')) %>
+                            <a rel="noopener" target="_blank" href="<%= hintItem.result.helpText.substring(hintItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                          </span>
+                        </div>
+                        <% if(hintItem.result.details && hintItem.result.details.items.length){%>
+                          <details class="lh-details" open="">
+                            <summary>View Details</summary>
+                            <% if(hintItem.result.details && hintItem.result.details.type == 'table' && hintItem.result.details.items.length ){ %>
+                            <table class="lh-table">
+                              <thead>
+                                <tr>
+                                  <% hintItem.result.details.itemHeaders.forEach((headerItem)=>{ %>
+                                    <th class="lh-table-column--<%= headerItem.itemType %>">
+                                      <div class="lh-text"><%= headerItem.text %></div>
+                                    </th>
+                                  <% }) %>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <% hintItem.result.details.items.forEach((bodyItem)=>{ %>
+                                  <tr>
+                                    <% bodyItem.forEach((bodyItemInfo)=>{ %>
+                                    <td class="lh-table-column--<%= bodyItemInfo.type %>">
+                                      <% if(bodyItemInfo.type == 'text'){ %>
+                                        <div class="lh-text"><%= bodyItemInfo.text %></div>
+                                      <% }else if(bodyItemInfo.type == 'code'){ %>
+                                        <pre class="lh-code"><%= bodyItemInfo.text %></pre>
+                                      <% }else if(bodyItemInfo.type == 'link'){ %>
+                                        <a rel="noopener" target="_blank" href="<%= bodyItemInfo.url %>"><%= bodyItemInfo.text %></a>
+                                      <% }else if(bodyItemInfo.type == 'url'){ %>
+                                        <div class="lh-text__url" title="<%= bodyItemInfo.text %>">
+                                          <!-- <div class="lh-text">xxx</div> -->
+                                          <div class="lh-text lh-text__url-host"><%= bodyItemInfo.text %></div>
+                                        </div>
+                                      <% }else if(bodyItemInfo.type == 'thumbnail'){ %>
+                                        <img class="lh-thumbnail" src="<%= bodyItemInfo.url %>" alt="" title="<%= bodyItemInfo.url %>">
+                                      <% } %>
+                                    </td>
+                                    <% }) %>
+                                  </tr>
+                                <% }) %>
+                              </tbody>
+                            </table>
+                            <% }else if(hintItem.result.details.type == 'list'){ %>
+                            <div class="lh-list__items">
+                              <% hintItem.result.details.items.forEach((listItem)=>{ %>
+                                <span class="lh-list__item">
+                                  <div class="lh-text__url" title="<%= listItem.text %>">
+                                    <!-- <div class="lh-text">待处理</div> -->
+                                    <div class="lh-text lh-text__url-host">(<%= listItem.text %>)</div>
+                                  </div>
+                                </span>
+                              <% }) %>
+                            </div>
+                            <% } %>
+                          </details>
+                        <% } %>
+                      </details>
+                    <% }) %>
+                  <% }else if(key == 'perf-info'){ %>
+                    <% item.audits.filter((item)=> (item.group == 'perf-info')).forEach((infoItem)=>{ %>
+                      <div class="lh-audit">
+                        <div class="lh-score">
+                          <div class="lh-score__value lh-score__value--average lh-score__value--numeric"><%= infoItem.score %></div>
+                          <details class="lh-score__header lh-expandable-details">
+                            <summary class="lh-score__snippet lh-expandable-details__summary">
+                              <span class="lh-score__title"><%= infoItem.result.description %></span>
+                              <div class="lh-toggle-arrow"></div>
+                            </summary>
+                            <div class="lh-score__description">
+                              <span><%= infoItem.result.helpText.substring(0, infoItem.result.helpText.indexOf('[Learn more]')) %>
+                                <a rel="noopener" target="_blank" href="<%= infoItem.result.helpText.substring(infoItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                              </span>
+                            </div>
+                            <% if(infoItem.result.details){ %>
+                              <details class="lh-details" open="">
+                                <% if(infoItem.result.details.type == 'table' && infoItem.result.details.items.length ){ %>
+                                <summary class="lh-list__header"><%= infoItem.result.details.header.text || infoItem.result.details.header %></summary>
+                                <table class="lh-table">
+                                  <thead>
+                                    <tr>
+                                      <% infoItem.result.details.itemHeaders.forEach((headerItem)=>{ %>
+                                        <th class="lh-table-column--<%= headerItem.itemType %>">
+                                          <div class="lh-text"><%= headerItem.text %></div>
+                                        </th>
+                                      <% }) %>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <% infoItem.result.details.items.forEach((bodyItem)=>{ %>
+                                      <tr>
+                                        <% bodyItem.forEach((bodyItemInfo)=>{ %>
+                                        <td class="lh-table-column--<%= bodyItemInfo.type %>">
+                                          <% if(bodyItemInfo.type == 'text'){ %>
+                                            <div class="lh-text"><%= bodyItemInfo.text %></div>
+                                          <% }else if(bodyItemInfo.type == 'code'){ %>
+                                            <pre class="lh-code"><%= bodyItemInfo.text %></pre>
+                                          <% }else if(bodyItemInfo.type == 'link'){ %>
+                                            <a rel="noopener" target="_blank" href="<%= bodyItemInfo.url %>"><%= bodyItemInfo.text %></a>
+                                          <% }else if(bodyItemInfo.type == 'url'){ %>
+                                            <div class="lh-text__url" title="<%= bodyItemInfo.text %>">
+                                              <!-- <div class="lh-text">xxx</div> -->
+                                              <div class="lh-text lh-text__url-host"><%= bodyItemInfo.text %></div>
+                                            </div>
+                                          <% }else if(bodyItemInfo.type == 'thumbnail'){ %>
+                                            <img class="lh-thumbnail" src="<%= bodyItemInfo.url %>" alt="" title="<%= bodyItemInfo.url %>">
+                                          <% } %>
+                                        </td>
+                                        <% }) %>
+                                      </tr>
+                                    <% }) %>
+                                  </tbody>
+                                </table>
+                                <% }else if(infoItem.result.details.type == 'list'){ %>
+                                <div class="lh-list__items">
+                                  <% infoItem.result.details.items.forEach((listItem)=>{ %>
+                                    <span class="lh-list__item">
+                                      <div class="lh-text__url" title="<%= listItem.text %>">
+                                        <!-- <div class="lh-text">待处理</div> -->
+                                        <div class="lh-text lh-text__url-host">(<%= listItem.text %>)</div>
+                                      </div>
+                                    </span>
+                                  <% }) %>
+                                </div>
+                                <% }else if(infoItem.result.details.type == 'criticalrequestchain'){ %>
+                                  <div class="lh-score__description">
+                                    Longest chain:
+                                    <b class="lh-crc__longest_duration">8,429.3ms</b>
+                                    over
+                                    <b class="lh-crc__longest_length">2</b>
+                                    requests, totalling
+                                    <b class="lh-crc__longest_transfersize">125.85&nbsp;KB</b>
+                                  </div>
+                                  <div class="lh-crc">
+                                    <details class="lh-details" open="">
+                                      <summary>View critical network waterfall:</summary>
+                                      <div class="crc-initial-nav">Initial Navigation</div>
+                                      <% Object.keys(infoItem.result.details.chains).forEach((key) => { %>
+                                        <div class="crc-node" title="<%= infoItem.result.details.chains[key].request.url %>">
+                                          <span class="crc-node__tree-marker">
+                                            <span class="tree-marker up-right"></span>
+                                            <span class="tree-marker right"></span>
+                                            <span class="tree-marker horiz-down"></span>
+                                          </span>
+                                          <span class="crc-node__tree-value">
+                                            <span class="crc-node__tree-hostname">(<%= infoItem.result.details.chains[key].request.url %>)</span>
+                                          </span>
+                                        </div>
+                                        <% Object.keys(infoItem.result.details.chains[key].children).forEach((itemKey) => { %>
+                                          <div class="crc-node" title="<%= infoItem.result.details.chains[key].request.url %>">
+                                            <span class="crc-node__tree-marker">
+                                              <span class="tree-marker"></span>
+                                              <span class="tree-marker"></span>
+                                              <span class="tree-marker vert-right"></span>
+                                              <span class="tree-marker right"></span>
+                                              <span class="tree-marker right"></span>
+                                            </span>
+                                            <span class="crc-node__tree-value">
+                                              <span class="crc-node__tree-file"></span>
+                                              <span class="crc-node__tree-hostname">(<%= infoItem.result.details.chains[key].children[itemKey].request.url %>)</span>
+                                              <span class="crc-node__chain-duration"> <%= (infoItem.result.details.chains[key].children[itemKey].request.endTime - infoItem.result.details.chains[key].children[itemKey].request.startTime).toFixed(2) %> ms, </span>
+                                              <span class="crc-node__chain-duration"><%= infoItem.result.details.chains[key].children[itemKey].request.transferSize %>&nbsp;KB</span>
+                                            </span>
+                                          </div>
+                                        <% }) %>
+                                      <% }) %>
+                                    </details>
+                                  </div>
+                                <% } %>
+                              </details>
+                            <% } %>
+                          </details>
+                        </div>
+                      </div>
+                    <% }) %>
+                  <% } %>
+                </div>
+                <% }) %>
+                <details class="lh-audit-group lh-passed-audits">
+                  <summary class="lh-audit-group__summary">
+                    <div class="lh-audit-group__header">pass</div>
+                    <div class="lh-toggle-arrow"></div>
+                  </summary>
+                  <% item.audits.forEach((perItem)=>{ %>
+                    <% if(perItem.score == '100'){ %>
+                      <div class="lh-audit">
+                        <div class="lh-score">
+                          <div class="lh-score__value lh-score__value--pass lh-score__value--binary"><%= perItem.score %></div>
+                          <details class="lh-score__header lh-expandable-details" open="">
+                            <summary class="lh-score__snippet lh-expandable-details__summary">
+                              <span class="lh-score__title"><%= perItem.result.description %>  <%= perItem.result.displayValue %></span>
+                              <div class="lh-toggle-arrow" title="See audits"></div>
+                            </summary>
+                            <div class="lh-score__description">
+                              <span><%= perItem.result.helpText.substring(0, perItem.result.helpText.indexOf('[Learn more]')) %>
+                                <a rel="noopener" target="_blank" href="<%= perItem.result.helpText.substring(perItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                              </span>
+                            </div>
+                            <% if(perItem.result.details){ %>
+                              <% if(perItem.result.details.type == 'cards'){ %>
+                                <details class="lh-details" open="">
+                                  <summary>View details</summary>
+                                  <div class="lh-scorecards">
+                                    <% perItem.result.details.items.forEach((cardItem)=>{ %>
+                                    <div class="lh-scorecard">
+                                      <div class="lh-scorecard__title"><%= cardItem.title %></div>
+                                      <div class="lh-scorecard__value"><%= cardItem.value %></div>
+                                      <div class="lh-scorecard__target">target:  <%= cardItem.target %></div>
+                                    </div>
+                                    <% }) %>
+                                  </div>
+                                </detail>
+                              <% }else if(perItem.result.details.type == 'table' && perItem.result.details.items.length){ %>
+                                <table class="lh-table">
+                                  <thead>
+                                    <tr>
+                                      <% perItem.result.details.itemHeaders.forEach((headerItem)=>{ %>
+                                        <th class="lh-table-column--<%= headerItem.itemType %>">
+                                          <div class="lh-text"><%= headerItem.text %></div>
+                                        </th>
+                                      <% }) %>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <% perItem.result.details.items.forEach((bodyItem)=>{ %>
+                                      <tr>
+                                        <% bodyItem.forEach((bodyItemInfo)=>{ %>
+                                        <td class="lh-table-column--<%= bodyItemInfo.type %>">
+                                          <% if(bodyItemInfo.type == 'text'){ %>
+                                            <div class="lh-text"><%= bodyItemInfo.text %></div>
+                                          <% }else if(bodyItemInfo.type == 'code'){ %>
+                                            <pre class="lh-code"><%= bodyItemInfo.text %></pre>
+                                          <% }else if(bodyItemInfo.type == 'link'){ %>
+                                            <a rel="noopener" target="_blank" href="<%= bodyItemInfo.url %>"><%= bodyItemInfo.text %></a>
+                                          <% }else if(bodyItemInfo.type == 'url'){ %>
+                                            <div class="lh-text__url" title="<%= bodyItemInfo.text %>">
+                                              <!-- <div class="lh-text">xxx</div> -->
+                                              <div class="lh-text lh-text__url-host"><%= bodyItemInfo.text %></div>
+                                            </div>
+                                          <% }else if(bodyItemInfo.type == 'thumbnail'){ %>
+                                            <img class="lh-thumbnail" src="<%= bodyItemInfo.url %>" alt="" title="<%= bodyItemInfo.url %>">
+                                          <% } %>
+                                        </td>
+                                        <% }) %>
+                                      </tr>
+                                    <% }) %>
+                                  </tbody>
+                                </table>
+                              <% }else if(perItem.result.details.type == 'filmstrip'){ %>
+                                <div class="lh-filmstrip">
+                                  <% perItem.result.details.items.forEach((fileItem)=>{ %>
+                                    <div class="lh-filmstrip__frame">
+                                      <div class="lh-filmstrip__timestamp"><%= parseInt(fileItem.timing) %> s</div>
+                                      <img class="lh-filmstrip__thumbnail" src="data:image/jpeg;base64,<%= fileItem.data %>" alt="Screenshot at <%= parseInt(fileItem.timing) %> s">
+                                    </div>
+                                  <% }) %>
+                                </div>
+                              <% } %>
+                            <% } %>
+                          </details>
+                        </div>
+                      </div>
+                    <% } %>
+                  <% }) %>
+                </details>
+              </div>
+            <% }else if(item.name == 'Best Practices'){ %>
+              <div class="lh-category">
+                <span class="lh-permalink" id="best-practices"></span>
+                <div class="lh-score">
+                  <div class="lh-score__value lh-score__value--average lh-score__value--numeric">56</div>
+                  <div class="lh-score__gauge">
+                    <a href="#best-practices" class="lh-gauge__wrapper">
+                      <div class="lh-gauge lh-gauge--average" data-progress="56">
+                        <div class="lh-gauge__circle">
+                          <div class="lh-gauge__mask lh-gauge__mask--full" style="transform: rotate(100deg);">
+                            <div class="lh-gauge__fill" style="transform: rotate(100deg);"></div>
+                          </div>
+                          <div class="lh-gauge__mask lh-gauge__mask--half">
+                            <div class="lh-gauge__fill" style="transform: rotate(100deg);"></div>
+                            <div class="lh-gauge__fill lh-gauge__fill--fix" style="transform: rotate(200deg);"></div>
+                          </div>
+                        </div>
+                        <div class="lh-gauge__percentage">56</div>
+                      </div>
+                      <div class="lh-gauge__label">最佳实践</div>
+                    </a>
+                  </div>
+                  <div class="lh-score__header">
+                    <div class="lh-score__snippet">
+                      <span class="lh-score__title">
+                        <span>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">最佳实践</font>
+                          </font>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="lh-score__description">
+                      <span>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">我们已经编写了一些关于更新您的Web应用程序并避免性能问题的建议。</font>
+                        </font>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lh-audit-group lh-failed-audits">
+                  <summary class="lh-audit-group__summary">
+                    <div class="lh-audit-group__header">fail</div>
+                    <div class="lh-toggle-arrow lh-toggle-arrow-unexpandable">
+                    </div>
+                  </summary>
+                  <% item.audits.forEach((bestPracticesItem)=>{ %>
+                    <% if(!bestPracticesItem.result.score){ %>
+                      <div class="lh-audit">
+                        <div class="lh-score">
+                          <div class="lh-score__value lh-score__value--fail lh-score__value--binary"><%= bestPracticesItem.score %></div>
+                          <details class="lh-score__header lh-expandable-details">
+                            <summary class="lh-score__snippet lh-expandable-details__summary">
+                              <span class="lh-score__title"><%= bestPracticesItem.result.description %></span>
+                              <div class="lh-toggle-arrow"></div>
+                            </summary>
+                            <div class="lh-score__description">
+                              <span><%= bestPracticesItem.result.helpText.substring(0, bestPracticesItem.result.helpText.indexOf('[Learn more]')) %>
+                                <a rel="noopener" target="_blank" href="<%= bestPracticesItem.result.helpText.substring(bestPracticesItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                              </span>
+                            </div>
+                            <% if(bestPracticesItem.result.details){ %>
+                              <details class="lh-details" open="">
+                                <summary class="lh-list__header"><%= bestPracticesItem.result.details.header.text || bestPracticesItem.result.details.header %></summary>
+                                <% if(bestPracticesItem.result.details.type == 'table' && bestPracticesItem.result.details.items.length ){ %>
+                                <table class="lh-table">
+                                  <thead>
+                                    <tr>
+                                      <% bestPracticesItem.result.details.itemHeaders.forEach((headerItem)=>{ %>
+                                        <th class="lh-table-column--<%= headerItem.itemType %>">
+                                          <div class="lh-text"><%= headerItem.text %></div>
+                                        </th>
+                                      <% }) %>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <% bestPracticesItem.result.details.items.forEach((bodyItem)=>{ %>
+                                      <tr>
+                                        <% bodyItem.forEach((bodyItemInfo)=>{ %>
+                                        <td class="lh-table-column--<%= bodyItemInfo.type %>">
+                                          <% if(bodyItemInfo.type == 'text'){ %>
+                                            <div class="lh-text"><%= bodyItemInfo.text %></div>
+                                          <% }else if(bodyItemInfo.type == 'code'){ %>
+                                            <pre class="lh-code"><%= bodyItemInfo.text %></pre>
+                                          <% }else if(bodyItemInfo.type == 'link'){ %>
+                                            <a rel="noopener" target="_blank" href="<%= bodyItemInfo.url %>"><%= bodyItemInfo.text %></a>
+                                          <% }else if(bodyItemInfo.type == 'url'){ %>
+                                            <div class="lh-text__url" title="<%= bodyItemInfo.text %>">
+                                              <!-- <div class="lh-text">xxx</div> -->
+                                              <div class="lh-text lh-text__url-host"><%= bodyItemInfo.text %></div>
+                                            </div>
+                                          <% }else if(bodyItemInfo.type == 'thumbnail'){ %>
+                                            <img class="lh-thumbnail" src="<%= bodyItemInfo.url %>" alt="" title="<%= bodyItemInfo.url %>">
+                                          <% } %>
+                                        </td>
+                                        <% }) %>
+                                      </tr>
+                                    <% }) %>
+                                  </tbody>
+                                </table>
+                                <% }else if(bestPracticesItem.result.details.type == 'list'){ %>
+                                <div class="lh-list__items">
+                                  <% bestPracticesItem.result.details.items.forEach((listItem)=>{ %>
+                                    <span class="lh-list__item">
+                                      <div class="lh-text__url" title="<%= listItem.text %>">
+                                        <!-- <div class="lh-text">待处理</div> -->
+                                        <div class="lh-text lh-text__url-host">(<%= listItem.text %>)</div>
+                                      </div>
+                                    </span>
+                                  <% }) %>
+                                </div>
+                                <% } %>
+                              </details>
+                            <% } %>
+                          </details>
+                        </div>
+                      </div>
+                    <% } %>
+                  <% }) %>
+                </div>
+                <details class="lh-audit-group lh-passed-audits">
+                  <summary class="lh-audit-group__summary">
+                    <div class="lh-audit-group__header">pass</div>
+                    <div class="lh-toggle-arrow"></div>
+                  </summary>
+                  <% item.audits.forEach((bestPracticesItem)=>{ %>
+                    <% if(bestPracticesItem.result.score){ %>
+                      <div class="lh-audit">
+                        <div class="lh-score">
+                          <div class="lh-score__value lh-score__value--pass lh-score__value--binary"><%= bestPracticesItem.score %></div>
+                          <details class="lh-score__header lh-expandable-details" open="">
+                            <summary class="lh-score__snippet lh-expandable-details__summary">
+                              <span class="lh-score__title"><%= bestPracticesItem.result.description %></span>
+                              <div class="lh-toggle-arrow" title="See audits"></div>
+                            </summary>
+                            <div class="lh-score__description">
+                              <span><%= bestPracticesItem.result.helpText.substring(0, bestPracticesItem.result.helpText.indexOf('[Learn more]')) %>
+                                <a rel="noopener" target="_blank" href="<%= bestPracticesItem.result.helpText.substring(bestPracticesItem.result.helpText.indexOf('[Learn more]')  + '[Learn more]'.length + 1).replace(')', '') %>">[Learn more]</a>
+                              </span>
+                            </div>
+                          </details>
+                        </div>
+                      </div>
+                    <% } %>
+                  <% }) %>
+                </details>
+              </div>
+            <% } %>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+    <footer class="lh-footer">
+      <span>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">所产生的</font>
+        </font>
+        <b>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">灯塔</font>
+          </font>
+        </b>
+        <span class="lh-footer__version">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">2.8.0</font>
+          </font>
+        </span>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">在</font>
+        </font>
+        <span class="lh-footer__timestamp">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">2018年1月29日，下午2:33 GMT + 8</font>
+          </font>
+        </span>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"> | </font>
+        </font>
+        <a href="https://github.com/GoogleChrome/Lighthouse/issues" target="_blank" rel="noopener">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">提出问题</font>
+          </font>
+        </a>
+      </span>
+    </footer>
+  </main>
+</body>
+</html>
