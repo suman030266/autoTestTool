@@ -1,0 +1,4709 @@
+[
+  {
+    "method": "Page.frameStartedLoading",
+    "params": {
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.1",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://www.baidu.com/",
+        "method": "GET",
+        "headers": {
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "VeryHigh",
+        "referrerPolicy": "no-referrer-when-downgrade"
+      },
+      "timestamp": 204311.461878,
+      "wallTime": 1519632439.99827,
+      "initiator": {
+        "type": "other"
+      },
+      "type": "Document",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.1",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204311.470091,
+      "type": "Document",
+      "response": {
+        "url": "https://www.baidu.com/",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:19 GMT",
+          "Content-Encoding": "gzip",
+          "Vary": "Accept-Encoding",
+          "Bduserid": "0",
+          "X-Powered-By": "HPHP",
+          "Transfer-Encoding": "chunked",
+          "P3p": "CP=\" OTI DSP COR IVA OUR IND COM \"",
+          "Bdpagetype": "1",
+          "Connection": "Keep-Alive",
+          "Bdqid": "0xdf62149b0001355b",
+          "Server": "BWS/1.1",
+          "Cxy_all": "baidu+591f15cee0bebd1e521b5e46bb7dd18f",
+          "Strict-Transport-Security": "max-age=172800",
+          "Content-Type": "text/html; charset=utf-8",
+          "Cache-Control": "private",
+          "X-Ua-Compatible": "IE=Edge,chrome=1",
+          "Set-Cookie": "BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\nBIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\nPSTM=1519632439; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\nBDSVRTM=0; path=/\nBD_HOME=0; path=/\nH_PS_PSSID=1447_13548_21106_20719; path=/; domain=.baidu.com",
+          "Expires": "Mon, 26 Feb 2018 08:06:52 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nBdpagetype: 1\r\nBdqid: 0xdf62149b0001355b\r\nBduserid: 0\r\nCache-Control: private\r\nConnection: Keep-Alive\r\nContent-Encoding: gzip\r\nContent-Type: text/html; charset=utf-8\r\nCxy_all: baidu+591f15cee0bebd1e521b5e46bb7dd18f\r\nDate: Mon, 26 Feb 2018 08:07:19 GMT\r\nExpires: Mon, 26 Feb 2018 08:06:52 GMT\r\nP3p: CP=\" OTI DSP COR IVA OUR IND COM \"\r\nServer: BWS/1.1\r\nSet-Cookie: BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\r\nSet-Cookie: BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\r\nSet-Cookie: PSTM=1519632439; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com\r\nSet-Cookie: BDSVRTM=0; path=/\r\nSet-Cookie: BD_HOME=0; path=/\r\nSet-Cookie: H_PS_PSSID=1447_13548_21106_20719; path=/; domain=.baidu.com\r\nStrict-Transport-Security: max-age=172800\r\nVary: Accept-Encoding\r\nX-Powered-By: HPHP\r\nX-Ua-Compatible: IE=Edge,chrome=1\r\nTransfer-Encoding: chunked\r\n\r\n",
+        "mimeType": "text/html",
+        "requestHeaders": {
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "www.baidu.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET / HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": false,
+        "connectionId": 140,
+        "remoteIPAddress": "220.181.111.188",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 1050,
+        "timing": {
+          "requestTime": 204310.626288,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": 0,
+          "dnsEnd": 17.5800000142772,
+          "connectStart": 17.5800000142772,
+          "connectEnd": 263.826000009431,
+          "sslStart": 44.1250000149012,
+          "sslEnd": 263.770999998087,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 265.374999988126,
+          "sendEnd": 265.512000012677,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 829.552999988664
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.1",
+      "timestamp": 204311.474583,
+      "dataLength": 9874,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Page.frameNavigated",
+    "params": {
+      "frame": {
+        "id": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)",
+        "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+        "url": "https://www.baidu.com/",
+        "securityOrigin": "https://www.baidu.com",
+        "mimeType": "text/html"
+      }
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.1",
+      "timestamp": 204311.624398,
+      "dataLength": 65536,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.2",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://www.baidu.com/img/bd_logo1.png",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204311.63719,
+      "wallTime": 1519632440.17358,
+      "initiator": {
+        "type": "parser",
+        "url": "https://www.baidu.com/",
+        "lineNumber": 434
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.3",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://www.baidu.com/img/baidu_jgylogo3.gif",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204311.640232,
+      "wallTime": 1519632440.17662,
+      "initiator": {
+        "type": "parser",
+        "url": "https://www.baidu.com/",
+        "lineNumber": 434
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.4",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Medium",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204311.643062,
+      "wallTime": 1519632440.17945,
+      "initiator": {
+        "type": "parser",
+        "url": "https://www.baidu.com/",
+        "lineNumber": 646
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.1",
+      "timestamp": 204311.649259,
+      "dataLength": 39592,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.1",
+      "timestamp": 204311.623802,
+      "encodedDataLength": 32491
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.8",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_x2_9d645d9.png",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204311.868461,
+      "wallTime": 1519632440.40485,
+      "initiator": {
+        "type": "parser",
+        "url": "https://www.baidu.com/",
+        "lineNumber": 646
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.9",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204311.87394,
+      "wallTime": 1519632440.41033,
+      "initiator": {
+        "type": "parser",
+        "url": "https://www.baidu.com/",
+        "lineNumber": 646
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.resourceChangedPriority",
+    "params": {
+      "requestId": "7552.8",
+      "newPriority": "High",
+      "timestamp": 204312.179957
+    }
+  },
+  {
+    "method": "Network.resourceChangedPriority",
+    "params": {
+      "requestId": "7552.9",
+      "newPriority": "High",
+      "timestamp": 204312.180087
+    }
+  },
+  {
+    "method": "Network.resourceChangedPriority",
+    "params": {
+      "requestId": "7552.2",
+      "newPriority": "High",
+      "timestamp": 204312.180143
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.2",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204312.241857,
+      "type": "Image",
+      "response": {
+        "url": "https://www.baidu.com/img/bd_logo1.png",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:20 GMT",
+          "Last-Modified": "Wed, 03 Sep 2014 10:00:27 GMT",
+          "Server": "Apache",
+          "Etag": "\"1ec5-502264e2ae4c0\"",
+          "Content-Type": "image/png",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "Keep-Alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "7877",
+          "Expires": "Thu, 24 Feb 2028 08:07:20 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=315360000\r\nConnection: Keep-Alive\r\nContent-Length: 7877\r\nContent-Type: image/png\r\nDate: Mon, 26 Feb 2018 08:07:20 GMT\r\nEtag: \"1ec5-502264e2ae4c0\"\r\nExpires: Thu, 24 Feb 2028 08:07:20 GMT\r\nLast-Modified: Wed, 03 Sep 2014 10:00:27 GMT\r\nServer: Apache\r\n\r\n",
+        "mimeType": "image/png",
+        "requestHeaders": {
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "www.baidu.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Referer": "https://www.baidu.com/",
+          "Cookie": "BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BDSVRTM=0; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719",
+          "Connection": "keep-alive"
+        },
+        "requestHeadersText": "GET /img/bd_logo1.png HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCookie: BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BDSVRTM=0; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719\r\n",
+        "connectionReused": true,
+        "connectionId": 140,
+        "remoteIPAddress": "220.181.111.188",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 313,
+        "timing": {
+          "requestTime": 204311.639005,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.750000006519258,
+          "sendEnd": 0.828999996883795,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 571.561999997357
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.2",
+      "timestamp": 204312.242785,
+      "dataLength": 4012,
+      "encodedDataLength": 3783
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.3",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204312.252306,
+      "type": "Image",
+      "response": {
+        "url": "https://www.baidu.com/img/baidu_jgylogo3.gif",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:20 GMT",
+          "Last-Modified": "Wed, 22 Jun 2011 06:40:43 GMT",
+          "Server": "Apache",
+          "Etag": "\"2c1-4a6473f6030c0\"",
+          "Content-Type": "image/gif",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "Keep-Alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "705",
+          "Expires": "Thu, 24 Feb 2028 08:07:20 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nCache-Control: max-age=315360000\r\nConnection: Keep-Alive\r\nContent-Length: 705\r\nContent-Type: image/gif\r\nDate: Mon, 26 Feb 2018 08:07:20 GMT\r\nEtag: \"2c1-4a6473f6030c0\"\r\nExpires: Thu, 24 Feb 2028 08:07:20 GMT\r\nLast-Modified: Wed, 22 Jun 2011 06:40:43 GMT\r\nServer: Apache\r\n\r\n",
+        "mimeType": "image/gif",
+        "requestHeaders": {
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "www.baidu.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Referer": "https://www.baidu.com/",
+          "Cookie": "BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BDSVRTM=0; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719",
+          "Connection": "keep-alive"
+        },
+        "requestHeadersText": "GET /img/baidu_jgylogo3.gif HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCookie: BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BDSVRTM=0; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719\r\n",
+        "connectionReused": true,
+        "connectionId": 141,
+        "remoteIPAddress": "220.181.111.188",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 311,
+        "timing": {
+          "requestTime": 204311.677384,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.834999984363094,
+          "sendEnd": 0.908999994862825,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 572.564000001876
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.3",
+      "timestamp": 204312.25242,
+      "dataLength": 705,
+      "encodedDataLength": 705
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.3",
+      "timestamp": 204312.251821,
+      "encodedDataLength": 1016
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.2",
+      "timestamp": 204312.274712,
+      "dataLength": 3865,
+      "encodedDataLength": 4094
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.2",
+      "timestamp": 204312.258218,
+      "encodedDataLength": 8190
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.4",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204312.383236,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:20 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "6384007",
+          "ETag": "\"16e36-540b1498e39c0\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "33167",
+          "Expires": "Sun, 12 Dec 2027 10:47:13 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:20 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 33167\r\nConnection: keep-alive\r\nETag: \"16e36-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Sun, 12 Dec 2027 10:47:13 GMT\r\nAge: 6384007\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": false,
+        "connectionId": 171,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 452,
+        "timing": {
+          "requestTime": 204311.677207,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": 0.557999999728054,
+          "dnsEnd": 11.9399999966845,
+          "connectStart": 11.9399999966845,
+          "connectEnd": 66.2869999941904,
+          "sslStart": 30.0200000056066,
+          "sslEnd": 66.2690000026487,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 66.4209999958985,
+          "sendEnd": 66.4889999898151,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 649.52199999243
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.4",
+      "timestamp": 204312.384419,
+      "dataLength": 8188,
+      "encodedDataLength": 3644
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.8",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204312.490549,
+      "type": "Image",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_x2_9d645d9.png",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:20 GMT",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "7243063",
+          "ETag": "\"e42-540b1498e39c0\"",
+          "Content-Type": "image/png",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "3650",
+          "Expires": "Thu, 02 Dec 2027 12:09:37 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:20 GMT\r\nContent-Type: image/png\r\nContent-Length: 3650\r\nConnection: keep-alive\r\nETag: \"e42-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Thu, 02 Dec 2027 12:09:37 GMT\r\nAge: 7243063\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "image/png",
+        "requestHeaders": {
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_x2_9d645d9.png HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": false,
+        "connectionId": 180,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 378,
+        "timing": {
+          "requestTime": 204311.870938,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": 0.44599999091588,
+          "dnsEnd": 0.448999984655529,
+          "connectStart": 0.448999984655529,
+          "connectEnd": 34.908000001451,
+          "sslStart": 16.9330000062473,
+          "sslEnd": 34.8749999830034,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 36.5109999838751,
+          "sendEnd": 36.5699999965727,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 609.479000006104
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.9",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204312.499289,
+      "type": "Image",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:20 GMT",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "6384298",
+          "ETag": "\"3837-540b1498e39c0\"",
+          "Content-Type": "image/png",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "14391",
+          "Expires": "Sun, 12 Dec 2027 10:42:22 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:20 GMT\r\nContent-Type: image/png\r\nContent-Length: 14391\r\nConnection: keep-alive\r\nETag: \"3837-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Sun, 12 Dec 2027 10:42:22 GMT\r\nAge: 6384298\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "image/png",
+        "requestHeaders": {
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": false,
+        "connectionId": 188,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 380,
+        "timing": {
+          "requestTime": 204311.875517,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": 0.532000005478039,
+          "dnsEnd": 0.536000006832182,
+          "connectStart": 0.536000006832182,
+          "connectEnd": 31.8559999868739,
+          "sslStart": 14.3070000049192,
+          "sslEnd": 31.8439999828115,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 32.0570000039879,
+          "sendEnd": 32.1059999987483,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 613.214999990305
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.8",
+      "timestamp": 204312.529151,
+      "dataLength": 3650,
+      "encodedDataLength": 3630
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.8",
+      "timestamp": 204312.532972,
+      "dataLength": 0,
+      "encodedDataLength": 20
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.8",
+      "timestamp": 204312.528625,
+      "encodedDataLength": 4028
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.9",
+      "timestamp": 204312.537226,
+      "dataLength": 3716,
+      "encodedDataLength": 3716
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.4",
+      "timestamp": 204312.565029,
+      "dataLength": 65536,
+      "encodedDataLength": 29523
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.4",
+      "timestamp": 204312.569848,
+      "dataLength": 20026,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.4",
+      "timestamp": 204312.560992,
+      "encodedDataLength": 33619
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.10",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Intervention": "<https://www.chromestatus.com/feature/5718547946799104>; level=\"warning\""
+        },
+        "mixedContentType": "none",
+        "initialPriority": "High",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204312.863216,
+      "wallTime": 1519632441.39965,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "",
+              "scriptId": "36",
+              "url": "https://www.baidu.com/",
+              "lineNumber": 713,
+              "columnNumber": 359
+            },
+            {
+              "functionName": "",
+              "scriptId": "36",
+              "url": "https://www.baidu.com/",
+              "lineNumber": 714,
+              "columnNumber": 101
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.9",
+      "timestamp": 204312.873972,
+      "dataLength": 10675,
+      "encodedDataLength": 10675
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.9",
+      "timestamp": 204312.608764,
+      "encodedDataLength": 14771
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.12",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204312.909662,
+      "wallTime": 1519632441.4461,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "send",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 139,
+              "columnNumber": 333
+            },
+            {
+              "functionName": "ajax",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 137,
+              "columnNumber": 340
+            },
+            {
+              "functionName": "",
+              "scriptId": "36",
+              "url": "https://www.baidu.com/",
+              "lineNumber": 712,
+              "columnNumber": 495
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.10",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204313.435742,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:21 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Sun, 11 Feb 2018 04:28:02 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "1301442",
+          "ETag": "\"3e50a-564e82fe0b880\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Transfer-Encoding": "chunked",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Expires": "Wed, 09 Feb 2028 06:36:39 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:21 GMT\r\nContent-Type: application/javascript\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nETag: \"3e50a-564e82fe0b880\"\r\nLast-Modified: Sun, 11 Feb 2018 04:28:02 GMT\r\nExpires: Wed, 09 Feb 2028 06:36:39 GMT\r\nAge: 1301442\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Intervention": "<https://www.chromestatus.com/feature/5718547946799104>; level=\"warning\"",
+          "Accept": "*/*",
+          "Referer": "https://www.baidu.com/",
+          "Connection": "keep-alive"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nIntervention: <https://www.chromestatus.com/feature/5718547946799104>; level=\"warning\"\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 188,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 457,
+        "timing": {
+          "requestTime": 204312.864294,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.654000003123656,
+          "sendEnd": 0.724000012269244,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 569.831000000704
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.450756,
+      "dataLength": 8367,
+      "encodedDataLength": 3639
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.466137,
+      "dataLength": 7292,
+      "encodedDataLength": 2692
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.12",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204313.492039,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:21 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "6384298",
+          "ETag": "\"9fc-540b1498e39c0\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "1070",
+          "Expires": "Sun, 12 Dec 2027 10:42:23 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:21 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 1070\r\nConnection: keep-alive\r\nETag: \"9fc-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Sun, 12 Dec 2027 10:42:23 GMT\r\nAge: 6384298\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 171,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 449,
+        "timing": {
+          "requestTime": 204312.911943,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 1.31499997223727,
+          "sendEnd": 1.4179999998305,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 577.814999996917
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.12",
+      "timestamp": 204313.507818,
+      "dataLength": 2556,
+      "encodedDataLength": 1070
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.12",
+      "timestamp": 204313.506894,
+      "encodedDataLength": 1519
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.658205,
+      "dataLength": 65536,
+      "encodedDataLength": 32768
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.659498,
+      "dataLength": 34830,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.832179,
+      "dataLength": 65536,
+      "encodedDataLength": 32768
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.834233,
+      "dataLength": 51229,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.872104,
+      "dataLength": 22452,
+      "encodedDataLength": 7715
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.10",
+      "timestamp": 204313.87146,
+      "encodedDataLength": 80039
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.13",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/js/nu_instant_search_ff8ea96.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204313.945375,
+      "wallTime": 1519632442.48186,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "send",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 139,
+              "columnNumber": 333
+            },
+            {
+              "functionName": "ajax",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 137,
+              "columnNumber": 340
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 236,
+              "columnNumber": 171
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.14",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/quickdelete_33e3eb8.png",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204313.975195,
+      "wallTime": 1519632442.51168,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 154,
+              "columnNumber": 363
+            },
+            {
+              "functionName": "access",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 31,
+              "columnNumber": 84
+            },
+            {
+              "functionName": "ct.fn.(anonymous function)",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 154,
+              "columnNumber": 301
+            },
+            {
+              "functionName": "t",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 279,
+              "columnNumber": 331
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 284,
+              "columnNumber": 408
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 284,
+              "columnNumber": 430
+            }
+          ]
+        }
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.15",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/swfobject_0178953.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204313.985335,
+      "wallTime": 1519632442.52182,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "q",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 121,
+              "columnNumber": 459
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 409
+            },
+            {
+              "functionName": "v",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 115,
+              "columnNumber": 210
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 358
+            },
+            {
+              "functionName": "A",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 120,
+              "columnNumber": 341
+            },
+            {
+              "functionName": "b",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 298
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 118,
+              "columnNumber": 274
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 109,
+              "columnNumber": 93
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 398,
+              "columnNumber": 524
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 399,
+              "columnNumber": 286
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.16",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/js/tu_329aca4.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204313.989076,
+      "wallTime": 1519632442.52557,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "q",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 121,
+              "columnNumber": 459
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 409
+            },
+            {
+              "functionName": "v",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 115,
+              "columnNumber": 210
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 358
+            },
+            {
+              "functionName": "A",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 120,
+              "columnNumber": 341
+            },
+            {
+              "functionName": "b",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 298
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 118,
+              "columnNumber": 274
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 109,
+              "columnNumber": 93
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 398,
+              "columnNumber": 524
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 399,
+              "columnNumber": 286
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.17",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/voice/js/voice_1672ed3.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204313.993448,
+      "wallTime": 1519632442.52994,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "q",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 121,
+              "columnNumber": 459
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 409
+            },
+            {
+              "functionName": "v",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 115,
+              "columnNumber": 210
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 358
+            },
+            {
+              "functionName": "A",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 120,
+              "columnNumber": 341
+            },
+            {
+              "functionName": "b",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 114,
+              "columnNumber": 298
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 118,
+              "columnNumber": 274
+            },
+            {
+              "functionName": "n",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 109,
+              "columnNumber": 93
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 400,
+              "columnNumber": 165
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 401,
+              "columnNumber": 235
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.18",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/sug/js/bdsug_async_68cc989.js",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204314.014611,
+      "wallTime": 1519632442.5511,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "send",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 139,
+              "columnNumber": 333
+            },
+            {
+              "functionName": "ajax",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 137,
+              "columnNumber": 340
+            },
+            {
+              "functionName": "initPreload",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 70,
+              "columnNumber": 566
+            },
+            {
+              "functionName": "",
+              "scriptId": "39",
+              "url": "https://www.baidu.com/",
+              "lineNumber": 725,
+              "columnNumber": 0
+            }
+          ]
+        }
+      },
+      "type": "Script",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Page.domContentEventFired",
+    "params": {
+      "timestamp": 204314.072163
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.13",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204314.516901,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/js/nu_instant_search_ff8ea96.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:22 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 08 Jan 2018 06:37:40 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "4167438",
+          "ETag": "\"522c-5623e08e0d500\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "5747",
+          "Expires": "Fri, 07 Jan 2028 02:30:04 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:22 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 5747\r\nConnection: keep-alive\r\nETag: \"522c-5623e08e0d500\"\r\nLast-Modified: Mon, 08 Jan 2018 06:37:40 GMT\r\nExpires: Fri, 07 Jan 2028 02:30:04 GMT\r\nAge: 4167438\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/js/nu_instant_search_ff8ea96.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 188,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 450,
+        "timing": {
+          "requestTime": 204313.945873,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.64600000041537,
+          "sendEnd": 0.731000007363036,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 569.143000000622
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.13",
+      "timestamp": 204314.531547,
+      "dataLength": 10061,
+      "encodedDataLength": 3646
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.14",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204314.54893,
+      "type": "Image",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/quickdelete_33e3eb8.png",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:22 GMT",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "7244455",
+          "ETag": "\"44c-540b1498e39c0\"",
+          "Content-Type": "image/png",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "1100",
+          "Expires": "Thu, 02 Dec 2027 11:46:27 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:22 GMT\r\nContent-Type: image/png\r\nContent-Length: 1100\r\nConnection: keep-alive\r\nETag: \"44c-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Thu, 02 Dec 2027 11:46:27 GMT\r\nAge: 7244455\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "image/png",
+        "requestHeaders": {
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/quickdelete_33e3eb8.png HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 171,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 378,
+        "timing": {
+          "requestTime": 204313.97568,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.3969999961555,
+          "sendEnd": 0.456000008853152,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 571.670000004815
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.14",
+      "timestamp": 204314.549,
+      "dataLength": 1100,
+      "encodedDataLength": 1100
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.14",
+      "timestamp": 204314.54808,
+      "encodedDataLength": 1478
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.13",
+      "timestamp": 204314.555531,
+      "dataLength": 10975,
+      "encodedDataLength": 2101
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.13",
+      "timestamp": 204314.554891,
+      "encodedDataLength": 6197
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.15",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204314.574959,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/swfobject_0178953.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:22 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 12 Dec 2016 08:38:42 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "6383948",
+          "ETag": "\"2400-5437207ef2880\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "3831",
+          "Expires": "Sun, 12 Dec 2027 10:48:14 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:22 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 3831\r\nConnection: keep-alive\r\nETag: \"2400-5437207ef2880\"\r\nLast-Modified: Mon, 12 Dec 2016 08:38:42 GMT\r\nExpires: Sun, 12 Dec 2027 10:48:14 GMT\r\nAge: 6383948\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/swfobject_0178953.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 180,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 450,
+        "timing": {
+          "requestTime": 204313.986529,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.618000020040199,
+          "sendEnd": 0.696000002790242,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 575.97600002191
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.15",
+      "timestamp": 204314.579512,
+      "dataLength": 9216,
+      "encodedDataLength": 3646
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.15",
+      "timestamp": 204314.580281,
+      "dataLength": 0,
+      "encodedDataLength": 185
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.15",
+      "timestamp": 204314.579044,
+      "encodedDataLength": 4281
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.16",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204314.597328,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/js/tu_329aca4.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:22 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 12 Dec 2016 08:38:42 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "7244455",
+          "ETag": "\"3812-5437207ef2880\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "5685",
+          "Expires": "Thu, 02 Dec 2027 11:46:27 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:22 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 5685\r\nConnection: keep-alive\r\nETag: \"3812-5437207ef2880\"\r\nLast-Modified: Mon, 12 Dec 2016 08:38:42 GMT\r\nExpires: Thu, 02 Dec 2027 11:46:27 GMT\r\nAge: 7244455\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/js/tu_329aca4.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": false,
+        "connectionId": 232,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 450,
+        "timing": {
+          "requestTime": 204313.990098,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": 4.54299998818897,
+          "dnsEnd": 4.54599998192862,
+          "connectStart": 4.54599998192862,
+          "connectEnd": 24.1609999793582,
+          "sslStart": 13.9869999838993,
+          "sslEnd": 24.1499999829102,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 24.2469999939203,
+          "sendEnd": 24.2929999949411,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 596.586999978172
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.16",
+      "timestamp": 204314.6032,
+      "dataLength": 7998,
+      "encodedDataLength": 3646
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.17",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204314.62134,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/voice/js/voice_1672ed3.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:22 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Fri, 22 Sep 2017 05:58:50 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "3570090",
+          "ETag": "\"8282-559c0e7235a80\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "14543",
+          "Expires": "Fri, 14 Jan 2028 00:25:52 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:22 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 14543\r\nConnection: keep-alive\r\nETag: \"8282-559c0e7235a80\"\r\nLast-Modified: Fri, 22 Sep 2017 05:58:50 GMT\r\nExpires: Fri, 14 Jan 2028 00:25:52 GMT\r\nAge: 3570090\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/voice/js/voice_1672ed3.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": false,
+        "connectionId": 240,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 451,
+        "timing": {
+          "requestTime": 204313.994274,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": 21.1389999894891,
+          "dnsEnd": 21.1420000123326,
+          "connectStart": 21.1420000123326,
+          "connectEnd": 48.6249999958091,
+          "sslStart": 38.5240000032354,
+          "sslEnd": 48.6139999993611,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 48.7100000027567,
+          "sendEnd": 48.7579999899026,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 624.001999996835
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.17",
+      "timestamp": 204314.621824,
+      "dataLength": 1458,
+      "encodedDataLength": 885
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.16",
+      "timestamp": 204314.627177,
+      "dataLength": 6356,
+      "encodedDataLength": 2039
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.16",
+      "timestamp": 204314.626431,
+      "encodedDataLength": 6135
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.19",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/css/soutu.css",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "VeryHigh",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204314.639345,
+      "wallTime": 1519632443.17583,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 110,
+              "columnNumber": 418
+            },
+            {
+              "functionName": "domManip",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 114,
+              "columnNumber": 465
+            },
+            {
+              "functionName": "append",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 110,
+              "columnNumber": 308
+            },
+            {
+              "functionName": "ct.fn.(anonymous function)",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 115,
+              "columnNumber": 262
+            },
+            {
+              "functionName": "init",
+              "scriptId": "43",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/js/tu_329aca4.js",
+              "lineNumber": 10,
+              "columnNumber": 53
+            },
+            {
+              "functionName": "",
+              "scriptId": "43",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/js/tu_329aca4.js",
+              "lineNumber": 22,
+              "columnNumber": 246
+            },
+            {
+              "functionName": "",
+              "scriptId": "43",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/js/tu_329aca4.js",
+              "lineNumber": 22,
+              "columnNumber": 335
+            }
+          ]
+        }
+      },
+      "type": "Stylesheet",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.17",
+      "timestamp": 204314.69882,
+      "dataLength": 31952,
+      "encodedDataLength": 13658
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.17",
+      "timestamp": 204314.698299,
+      "encodedDataLength": 14994
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.20",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAkCAMAAACg5NohAAAA7VBMVEUAAACqqqqZmZmqqqqfn5+Ojo6ZmZmVlZWdnZ2ZmZmfn5+WlpadnZ2Xl5ebm5uVlZWZmZmXl5eZmZmampqXl5eZmZmampqZmZmampqbm5uXl5eZmZmampqYmJiZmZmampqampqYmJiZmZmYmJiampqZmZmampqZmZmZmZmZmZmYmJiZmZmampqZmZmZmZmZmZmZmZmZmZmZmZmampqZmZmZmZmYmJiZmZmampqZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZlntL8zAAAATnRSTlMAAwUGCAkKDA0PEBEaGxwdHiAjJiwtMDc6PUBBTE1aXWBhZG1vcH5/goWGh4iKjo+UmZump6iuvr/AxcbI0tPZ297f5uft7vL09fb5+/48nAt9AAABHElEQVQoz93S21ZBURjF8T855BiSw06UUqiEcipKOW7s+f6P04XWGOw8QKN5Ndf4jfHdrAkm8Yf39XpUi/MrxaUkScuiW8pS9zwYtLpyyvsSt1XZtors/ZuP6pjaUWOPpJypOX24yG+qX3LR4f4vaSPvIfJqw1rHgOQx4pGAI62Z6BSYKmsoqylwogl9XQANvRh61hNQUJ+qmkDS1s1WrmUngaaqZDQLAZeOuvlAIN+VcwWEZsrAq+oApcV2NosSQF1vgKXVGUDsfmTbo/soQHolC6ClcXR/RLGxWgAEhvpM70r6S8PAtkaGWtXCBsK1lYYR8/K1Hc2bhYTXmyg051Lbt3PDGjj6iTOwXMtO3fUm0qR3m+JQXD/1N+gbnHtANlxuv2EAAAAASUVORK5CYII=",
+        "method": "GET",
+        "headers": {},
+        "mixedContentType": "none",
+        "initialPriority": "VeryLow",
+        "referrerPolicy": "no-referrer-when-downgrade"
+      },
+      "timestamp": 204314.719658,
+      "wallTime": 1519632443.25615,
+      "initiator": {
+        "type": "parser",
+        "url": "https://www.baidu.com/",
+        "lineNumber": 0
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestServedFromCache",
+    "params": {
+      "requestId": "7552.20"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.20",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204314.719698,
+      "type": "Image",
+      "response": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAkCAMAAACg5NohAAAA7VBMVEUAAACqqqqZmZmqqqqfn5+Ojo6ZmZmVlZWdnZ2ZmZmfn5+WlpadnZ2Xl5ebm5uVlZWZmZmXl5eZmZmampqXl5eZmZmampqZmZmampqbm5uXl5eZmZmampqYmJiZmZmampqampqYmJiZmZmYmJiampqZmZmampqZmZmZmZmZmZmYmJiZmZmampqZmZmZmZmZmZmZmZmZmZmZmZmampqZmZmZmZmYmJiZmZmampqZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZlntL8zAAAATnRSTlMAAwUGCAkKDA0PEBEaGxwdHiAjJiwtMDc6PUBBTE1aXWBhZG1vcH5/goWGh4iKjo+UmZump6iuvr/AxcbI0tPZ297f5uft7vL09fb5+/48nAt9AAABHElEQVQoz93S21ZBURjF8T855BiSw06UUqiEcipKOW7s+f6P04XWGOw8QKN5Ndf4jfHdrAkm8Yf39XpUi/MrxaUkScuiW8pS9zwYtLpyyvsSt1XZtors/ZuP6pjaUWOPpJypOX24yG+qX3LR4f4vaSPvIfJqw1rHgOQx4pGAI62Z6BSYKmsoqylwogl9XQANvRh61hNQUJ+qmkDS1s1WrmUngaaqZDQLAZeOuvlAIN+VcwWEZsrAq+oApcV2NosSQF1vgKXVGUDsfmTbo/soQHolC6ClcXR/RLGxWgAEhvpM70r6S8PAtkaGWtXCBsK1lYYR8/K1Hc2bhYTXmyg051Lbt3PDGjj6iTOwXMtO3fUm0qR3m+JQXD/1N+gbnHtANlxuv2EAAAAASUVORK5CYII=",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "image/png"
+        },
+        "mimeType": "image/png",
+        "connectionReused": false,
+        "connectionId": 0,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 0,
+        "protocol": "data",
+        "securityState": "unknown"
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.20",
+      "timestamp": 204314.719705,
+      "dataLength": 680,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.20",
+      "timestamp": 204314.71971,
+      "encodedDataLength": 0
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.18",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204315.121597,
+      "type": "Script",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/sug/js/bdsug_async_68cc989.js",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:23 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 15 Jan 2018 06:36:38 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "3623057",
+          "ETag": "\"8b4c-562cad6126980\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "application/javascript",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "10994",
+          "Expires": "Thu, 13 Jan 2028 09:43:06 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:23 GMT\r\nContent-Type: application/javascript\r\nContent-Length: 10994\r\nConnection: keep-alive\r\nETag: \"8b4c-562cad6126980\"\r\nLast-Modified: Mon, 15 Jan 2018 06:36:38 GMT\r\nExpires: Thu, 13 Jan 2028 09:43:06 GMT\r\nAge: 3623057\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "application/javascript",
+        "requestHeaders": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/sug/js/bdsug_async_68cc989.js HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: */*\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 171,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 451,
+        "timing": {
+          "requestTime": 204314.015045,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 533.334000007017,
+          "sendEnd": 533.393999998225,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 1103.95299998345
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.18",
+      "timestamp": 204315.135939,
+      "dataLength": 9862,
+      "encodedDataLength": 3645
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.18",
+      "timestamp": 204315.176027,
+      "dataLength": 25798,
+      "encodedDataLength": 7349
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.18",
+      "timestamp": 204315.174922,
+      "encodedDataLength": 11445
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.22",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://www.baidu.com/his?wd=&from=pc_web&rf=3&hisdata=&json=1&p=3&sid=1447_13548_21106_20719&req=2&csor=0&cb=jQuery110203982813450073852_1519632441303&_=1519632441304",
+        "method": "GET",
+        "headers": {
+          "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+          "Referer": "https://www.baidu.com/",
+          "X-Requested-With": "XMLHttpRequest",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "High",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204315.221627,
+      "wallTime": 1519632443.75812,
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "send",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 142,
+              "columnNumber": 387
+            },
+            {
+              "functionName": "ajax",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 137,
+              "columnNumber": 340
+            },
+            {
+              "functionName": "init",
+              "scriptId": "45",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/sug/js/bdsug_async_68cc989.js",
+              "lineNumber": 51,
+              "columnNumber": 545
+            },
+            {
+              "functionName": "bdsug",
+              "scriptId": "45",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/sug/js/bdsug_async_68cc989.js",
+              "lineNumber": 1,
+              "columnNumber": 601
+            },
+            {
+              "functionName": "bds.se.sug",
+              "scriptId": "45",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/sug/js/bdsug_async_68cc989.js",
+              "lineNumber": 13,
+              "columnNumber": 46
+            },
+            {
+              "functionName": "",
+              "scriptId": "38",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_b8644da.js",
+              "lineNumber": 74,
+              "columnNumber": 270
+            },
+            {
+              "functionName": "f",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 62,
+              "columnNumber": 618
+            },
+            {
+              "functionName": "fireWith",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 64,
+              "columnNumber": 235
+            },
+            {
+              "functionName": "r",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 133,
+              "columnNumber": 525
+            },
+            {
+              "functionName": "n.onload.n.onreadystatechange",
+              "scriptId": "34",
+              "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js",
+              "lineNumber": 139,
+              "columnNumber": 312
+            }
+          ]
+        }
+      },
+      "type": "XHR",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.19",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204315.240465,
+      "type": "Stylesheet",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/css/soutu.css",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:23 GMT",
+          "Content-Encoding": "gzip",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "7244455",
+          "ETag": "\"352b-540b1498e39c0\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "text/css",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "2203",
+          "Expires": "Thu, 02 Dec 2027 11:46:28 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:23 GMT\r\nContent-Type: text/css\r\nContent-Length: 2203\r\nConnection: keep-alive\r\nETag: \"352b-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Thu, 02 Dec 2027 11:46:28 GMT\r\nAge: 7244455\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nContent-Encoding: gzip\r\nVary: Accept-Encoding,User-Agent\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "text/css",
+        "requestHeaders": {
+          "Accept": "text/css,*/*;q=0.1",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://www.baidu.com/",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/css/soutu.css HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: text/css,*/*;q=0.1\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 232,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 436,
+        "timing": {
+          "requestTime": 204314.639791,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.44000000343658,
+          "sendEnd": 0.516000000061467,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 566.652000008617
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.19",
+      "timestamp": 204315.240893,
+      "dataLength": 13611,
+      "encodedDataLength": 2203
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.19",
+      "timestamp": 204315.239681,
+      "encodedDataLength": 2639
+    }
+  },
+  {
+    "method": "Page.loadEventFired",
+    "params": {
+      "timestamp": 204315.253301
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.23",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/css/soutu.css",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "Low",
+        "referrerPolicy": "no-referrer-when-downgrade"
+      },
+      "timestamp": 204315.256913,
+      "wallTime": 1519632443.7934,
+      "initiator": {
+        "type": "other"
+      },
+      "type": "Image",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.resourceChangedPriority",
+    "params": {
+      "requestId": "7552.23",
+      "newPriority": "High",
+      "timestamp": 204315.259683
+    }
+  },
+  {
+    "method": "Page.frameStoppedLoading",
+    "params": {
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.24",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "High",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204315.27061,
+      "wallTime": 1519632443.8071,
+      "initiator": {
+        "type": "other"
+      },
+      "type": "Other",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.22",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204315.788534,
+      "type": "XHR",
+      "response": {
+        "url": "https://www.baidu.com/his?wd=&from=pc_web&rf=3&hisdata=&json=1&p=3&sid=1447_13548_21106_20719&req=2&csor=0&cb=jQuery110203982813450073852_1519632441303&_=1519632441304",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:23 GMT",
+          "Cache-Control": "private",
+          "Server": "suggestion.baidu.zbb.df",
+          "Connection": "Keep-Alive",
+          "Content-Type": "baiduApp/json; v6.27.2.14; charset=UTF-8",
+          "Content-Length": "95",
+          "Expires": "Mon, 26 Feb 2018 09:07:23 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nCache-Control: private\r\nConnection: Keep-Alive\r\nContent-Length: 95\r\nContent-Type: baiduApp/json; v6.27.2.14; charset=UTF-8\r\nDate: Mon, 26 Feb 2018 08:07:23 GMT\r\nExpires: Mon, 26 Feb 2018 09:07:23 GMT\r\nServer: suggestion.baidu.zbb.df\r\n\r\n",
+        "mimeType": "baiduapp/json",
+        "requestHeaders": {
+          "Cookie": "BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719; BD_UPN=123253",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "www.baidu.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+          "Referer": "https://www.baidu.com/",
+          "X-Requested-With": "XMLHttpRequest",
+          "Connection": "keep-alive"
+        },
+        "requestHeadersText": "GET /his?wd=&from=pc_web&rf=3&hisdata=&json=1&p=3&sid=1447_13548_21106_20719&req=2&csor=0&cb=jQuery110203982813450073852_1519632441303&_=1519632441304 HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: keep-alive\r\nAccept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01\r\nX-Requested-With: XMLHttpRequest\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCookie: BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719; BD_UPN=123253\r\n",
+        "connectionReused": true,
+        "connectionId": 140,
+        "remoteIPAddress": "220.181.111.188",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 253,
+        "timing": {
+          "requestTime": 204315.222606,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.706999999238178,
+          "sendEnd": 0.796000007539988,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 563.782999990508
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.22",
+      "timestamp": 204315.789135,
+      "dataLength": 95,
+      "encodedDataLength": 95
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.22",
+      "timestamp": 204315.787152,
+      "encodedDataLength": 348
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.23",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204315.828293,
+      "type": "Image",
+      "response": {
+        "url": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:23 GMT",
+          "Ohc-Response-Time": "1 0 0 0 0 0",
+          "Last-Modified": "Mon, 07 Nov 2016 07:51:11 GMT",
+          "Server": "bfe/1.0.8.13-sslpool-patch",
+          "Age": "6383981",
+          "ETag": "\"4a6-540b1498e39c0\"",
+          "Content-Type": "image/png",
+          "Cache-Control": "max-age=315360000",
+          "Connection": "keep-alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "1190",
+          "Expires": "Sun, 12 Dec 2027 10:47:42 GMT"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nServer: bfe/1.0.8.13-sslpool-patch\r\nDate: Mon, 26 Feb 2018 08:07:23 GMT\r\nContent-Type: image/png\r\nContent-Length: 1190\r\nConnection: keep-alive\r\nETag: \"4a6-540b1498e39c0\"\r\nLast-Modified: Mon, 07 Nov 2016 07:51:11 GMT\r\nExpires: Sun, 12 Dec 2027 10:47:42 GMT\r\nAge: 6383981\r\nCache-Control: max-age=315360000\r\nAccept-Ranges: bytes\r\nOhc-Response-Time: 1 0 0 0 0 0\r\n\r\n",
+        "mimeType": "image/png",
+        "requestHeaders": {
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Connection": "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Referer": "https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/css/soutu.css",
+          "Host": "ss1.bdstatic.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "requestHeadersText": "GET /5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png HTTP/1.1\r\nHost: ss1.bdstatic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/css/soutu.css\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\n",
+        "connectionReused": true,
+        "connectionId": 232,
+        "remoteIPAddress": "106.38.179.32",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 378,
+        "timing": {
+          "requestTime": 204315.257444,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.474000000394881,
+          "sendEnd": 0.532000005478039,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 568.969000014477
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.23",
+      "timestamp": 204315.835295,
+      "dataLength": 1190,
+      "encodedDataLength": 1190
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.23",
+      "timestamp": 204315.834385,
+      "encodedDataLength": 1568
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.24",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204315.845029,
+      "type": "Other",
+      "response": {
+        "url": "https://www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:23 GMT",
+          "Content-Encoding": "gzip",
+          "Last-Modified": "Mon, 26 Feb 2018 08:06:07 GMT",
+          "Server": "Apache",
+          "Etag": "\"efa-56618fb6c99c0\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "image/svg+xml",
+          "Connection": "Keep-Alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "1734"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nConnection: Keep-Alive\r\nContent-Encoding: gzip\r\nContent-Length: 1734\r\nContent-Type: image/svg+xml\r\nDate: Mon, 26 Feb 2018 08:07:23 GMT\r\nEtag: \"efa-56618fb6c99c0\"\r\nLast-Modified: Mon, 26 Feb 2018 08:06:07 GMT\r\nServer: Apache\r\nVary: Accept-Encoding,User-Agent\r\n\r\n",
+        "mimeType": "image/svg+xml",
+        "requestHeaders": {
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "www.baidu.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Referer": "https://www.baidu.com/",
+          "Cookie": "BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719; BD_UPN=123253",
+          "Connection": "keep-alive"
+        },
+        "requestHeadersText": "GET /img/baidu_85beaf5496f291521eb75ba38eacbd87.svg HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCookie: BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719; BD_UPN=123253\r\n",
+        "connectionReused": true,
+        "connectionId": 141,
+        "remoteIPAddress": "220.181.111.188",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 300,
+        "timing": {
+          "requestTime": 204315.271557,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.64300000667572,
+          "sendEnd": 0.713999994331971,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 570.482000010088
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.24",
+      "timestamp": 204315.860285,
+      "dataLength": 3834,
+      "encodedDataLength": 1734
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.24",
+      "timestamp": 204315.851548,
+      "encodedDataLength": 2034
+    }
+  },
+  {
+    "method": "Network.requestWillBeSent",
+    "params": {
+      "requestId": "7552.25",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "documentURL": "https://www.baidu.com/",
+      "request": {
+        "url": "https://www.baidu.com/favicon.ico",
+        "method": "GET",
+        "headers": {
+          "Referer": "https://www.baidu.com/",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36"
+        },
+        "mixedContentType": "none",
+        "initialPriority": "High",
+        "referrerPolicy": "unsafe-url"
+      },
+      "timestamp": 204315.865658,
+      "wallTime": 1519632444.4022,
+      "initiator": {
+        "type": "other"
+      },
+      "type": "Other",
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.responseReceived",
+    "params": {
+      "requestId": "7552.25",
+      "loaderId": "(86DCDCA337AAEC04877029827BC98DDF)",
+      "timestamp": 204316.440961,
+      "type": "Other",
+      "response": {
+        "url": "https://www.baidu.com/favicon.ico",
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "Date": "Mon, 26 Feb 2018 08:07:24 GMT",
+          "Content-Encoding": "gzip",
+          "Last-Modified": "Fri, 27 Oct 2017 06:16:01 GMT",
+          "Server": "Apache",
+          "Etag": "\"423e-55c8139094a40\"",
+          "Vary": "Accept-Encoding,User-Agent",
+          "Content-Type": "image/x-icon",
+          "Connection": "Keep-Alive",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "984"
+        },
+        "headersText": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nConnection: Keep-Alive\r\nContent-Encoding: gzip\r\nContent-Length: 984\r\nContent-Type: image/x-icon\r\nDate: Mon, 26 Feb 2018 08:07:24 GMT\r\nEtag: \"423e-55c8139094a40\"\r\nLast-Modified: Fri, 27 Oct 2017 06:16:01 GMT\r\nServer: Apache\r\nVary: Accept-Encoding,User-Agent\r\n\r\n",
+        "mimeType": "image/x-icon",
+        "requestHeaders": {
+          "Accept-Encoding": "gzip, deflate, br",
+          "Host": "www.baidu.com",
+          "Accept-Language": "zh-CN,zh;q=0.9",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36",
+          "Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+          "Referer": "https://www.baidu.com/",
+          "Cookie": "BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719; BD_UPN=123253",
+          "Connection": "keep-alive"
+        },
+        "requestHeadersText": "GET /favicon.ico HTTP/1.1\r\nHost: www.baidu.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36\r\nAccept: image/webp,image/apng,image/*,*/*;q=0.8\r\nReferer: https://www.baidu.com/\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCookie: BAIDUID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F:FG=1; BIDUPSID=DB3AFE9A74CE1B9DD077C9A9C95CFB3F; PSTM=1519632439; BD_HOME=0; H_PS_PSSID=1447_13548_21106_20719; BD_UPN=123253\r\n",
+        "connectionReused": true,
+        "connectionId": 141,
+        "remoteIPAddress": "220.181.111.188",
+        "remotePort": 443,
+        "fromDiskCache": false,
+        "fromServiceWorker": false,
+        "encodedDataLength": 299,
+        "timing": {
+          "requestTime": 204315.867563,
+          "proxyStart": -1,
+          "proxyEnd": -1,
+          "dnsStart": -1,
+          "dnsEnd": -1,
+          "connectStart": -1,
+          "connectEnd": -1,
+          "sslStart": -1,
+          "sslEnd": -1,
+          "workerStart": -1,
+          "workerReady": -1,
+          "sendStart": 0.563999987207353,
+          "sendEnd": 0.639000005321577,
+          "pushStart": 0,
+          "pushEnd": 0,
+          "receiveHeadersEnd": 570.884999993723
+        },
+        "protocol": "http/1.1",
+        "securityState": "secure",
+        "securityDetails": {
+          "protocol": "TLS 1.2",
+          "keyExchange": "ECDHE_RSA",
+          "keyExchangeGroup": "P-256",
+          "cipher": "AES_128_GCM",
+          "certificateId": 0,
+          "subjectName": "baidu.com",
+          "sanList": [
+            "baidu.com",
+            "baifubao.com",
+            "www.baidu.cn",
+            "www.baidu.com.cn",
+            "click.hm.baidu.com",
+            "log.hm.baidu.com",
+            "cm.pos.baidu.com",
+            "wn.pos.baidu.com",
+            "update.pan.baidu.com",
+            "mct.y.nuomi.com",
+            "*.baidu.com",
+            "*.baifubao.com",
+            "*.baidustatic.com",
+            "*.bdstatic.com",
+            "*.bdimg.com",
+            "*.hao123.com",
+            "*.nuomi.com",
+            "*.chuanke.com",
+            "*.trustgo.com",
+            "*.bce.baidu.com",
+            "*.eyun.baidu.com",
+            "*.map.baidu.com",
+            "*.mbd.baidu.com",
+            "*.fanyi.baidu.com",
+            "*.baidubce.com",
+            "*.mipcdn.com",
+            "*.news.baidu.com",
+            "*.baidupcs.com",
+            "*.aipage.com",
+            "*.aipage.cn",
+            "*.bcehost.com",
+            "baifae.com",
+            "*.safe.baidu.com",
+            "*.im.baidu.com",
+            "*.ssl2.duapps.com",
+            "*.baifae.com",
+            "*.baiducontent.com",
+            "*.dlnel.com"
+          ],
+          "issuer": "GlobalSign Organization Validation CA - SHA256 - G2",
+          "validFrom": 1498714327,
+          "validTo": 1524634262,
+          "signedCertificateTimestampList": [
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Symantec log",
+              "logId": "DDEB1D2B7A0D4FA6208B81AD8168707E2E8E9D01D55C888D3D11C4CDB6ECBECC",
+              "timestamp": 1498714329560,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "30450220134EAF3FCC81DF778D4D73DB02EF78F83164319D6378E33188CF6D3C3A872C8E022100E737877E7D014DA20B9FF08D54AB1A62F0A12C2D233E752F1E20CA7A29E695B3"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Pilot' log",
+              "logId": "A4B90990B418581487BB13A2CC67700A3C359804F91BDFB8E377CD0EC80DDC10",
+              "timestamp": 1498714329546,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E9FE9D88EC7995608498FCFA64D6B8A9D609F1E907863BE1AA6EE4362ED0DCF4022100A2189F9F2CA728BA18B39FC805FAECC2A38DD4E313B616E539331D37F1C8C85E"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Skydiver' log",
+              "logId": "BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185",
+              "timestamp": 1498714329653,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "304402200C097554CEF0089E4B34EAB47EA4A0860F1F89AA37E4ADA386C1811A07BF2D78022041059709D3240232886F212FA67BAFF8D0979B4229ACC9EDE0081354D1585808"
+            },
+            {
+              "status": "Verified",
+              "origin": "Embedded in certificate",
+              "logDescription": "Google 'Rocketeer' log",
+              "logId": "EE4BBDB775CE60BAE142691FABE19E66A30F7E5FB072D88300C47B897AA8FDCB",
+              "timestamp": 1498714330089,
+              "hashAlgorithm": "SHA-256",
+              "signatureAlgorithm": "ECDSA",
+              "signatureData": "3046022100E799B95F7B8436C203F733C7B2034EA722362816E28A39713275F926E89DB72F022100A3C6427A8DAF0C8003B30FC9E9C8233D800A2DDBFDBBD089F49118EA04E31868"
+            }
+          ]
+        }
+      },
+      "frameId": "(F32F8982BD2E2C2B2A9F39617CD7FA3E)"
+    }
+  },
+  {
+    "method": "Network.dataReceived",
+    "params": {
+      "requestId": "7552.25",
+      "timestamp": 204316.441647,
+      "dataLength": 16958,
+      "encodedDataLength": 984
+    }
+  },
+  {
+    "method": "Network.loadingFinished",
+    "params": {
+      "requestId": "7552.25",
+      "timestamp": 204316.439908,
+      "encodedDataLength": 1283
+    }
+  }
+]
